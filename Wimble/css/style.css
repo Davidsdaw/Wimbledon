@@ -1,0 +1,435 @@
+:root{
+    --color-h1:#004A28;
+    --color-h2:#FFFFFF;
+    --color: #1c1c1c;
+
+}
+@font-face {
+    font-family: Gotham;
+    src: url(../assets/fonts/Gotham-Book.otf);
+}
+.header{
+    position: sticky;
+    top: 0px;
+    z-index: 30;
+}
+.header-top{
+    background: linear-gradient(86.34deg,#063 6.06%,#004125 91.34999999999999%);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header-top__a{
+    color: #fff;
+    text-decoration: none;
+}
+.hidden{
+    visibility: hidden;
+}
+body{
+    color: #000;
+    font-family: Gotham;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25;
+    font-size: 1.2rem;
+    margin: 0px;
+    background-color: var(--color-h2);
+}
+.header-bot{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.header-botbig{
+    width: 100%;
+    background-color: var(--color-h2);
+}
+
+li{
+    display: inline-block;
+    flex-direction: row;
+}
+
+.header-bot__der{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1 0 200px;
+}
+.header-bot__logo{
+    width: 52px;
+    height: 52px;
+}
+
+.hola {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.1s; 
+    margin-bottom: 2px;
+    padding: 8px 8px;
+    color: var(--color);
+    text-decoration: none;
+    font-size: 15px;
+}
+.hola::before{
+    content: '';
+    position: absolute;
+    left: 2px;
+    bottom: 0px;
+    width: 0px;
+    height: 2px;
+    background: #1c1c1c;
+    transition: width .3s;
+}
+.hola:hover::before {
+    width: 100%; /* La barra crece de izquierda a derecha al pasar el ratón */
+}
+.header-bot__iqz{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.input-text{
+    font-size: 13px;
+    line-height: 18px;
+    border: 1px solid #cdcac9;
+    height: 40px;
+    width: 260px;
+    border-radius: 20px; 
+    padding: 10px;
+    padding-left: 45px;
+    padding-right: 32px;
+}
+.input-text:focus,.input-text:active{
+    outline: var(--color-h1);
+}
+.ico{
+    padding: 10px;
+}
+.bandera{
+    width: 20px;
+    height: 18px;
+    padding: 10px;
+}
+.ico:hover{
+    color: var(--color-h1);
+}
+.h2_1{
+    color: #1c1c1c;
+    font-size: 24px;
+    font-family: 'Gotham Bold', sans-serif;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 8px auto 24px;
+    text-align: center;
+}
+.h2_1::after{
+    content: '';
+    width: 90px;
+    height: 2px;
+    background: #1c1c1c;
+    margin: 8px auto;
+    display: block;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.container2{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.img_presentation{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    padding: 0;
+    background-image: url(../assets/images/FINAL-timeless-tennis-charm-desktop.jpg);
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.slides {
+    display: flex;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.slide {
+    display: none;
+    flex: 0 0 auto;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Agregamos una transición suave */
+    min-height: 720px;
+    max-height: 720px;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.slide.active {
+    display: block; /* Muestra la diapositiva activa */
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%; /* Para que las imágenes se ajusten al ancho de la diapositiva */
+    height: 100%; /* Para que las imágenes se ajusten a la altura de la diapositiva */
+    object-fit: cover; 
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+.control {
+    height: 8px;
+    width: 8px;
+    background: #f0efee;
+    border: 1px solid #cdcac9;
+    cursor: pointer;
+    border-radius: 60%;
+    padding: 0px;
+    margin: 10px 5px 10px 5px;
+}
+
+.control.active {
+    background-color: #54007C;
+}
+
+.boton{
+    position:relative;
+    display: inline;
+    justify-content: center;
+    top: -80px;
+    z-index: 20;
+    text-decoration: none;
+    background: #54007c;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Gotham';
+    padding: 11px 35px;
+}
+.boton:hover{
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,.2),0px 8px 10px 1px rgba(0,0,0,.14),0px 3px 14px 2px rgba(0,0,0,.12)
+}
+.f{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px 60px 0px;
+    max-width: 1300px;
+    margin: 0 auto;  
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.xd1{
+    background-image: url(../assets/images/homepage-new-in2.png);
+    min-height: 560px;
+    min-width: 627px;
+    background-size: 115%;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: background-size 1.0s ease;
+}
+.xd2{
+    background-image: url(../assets/images/homeware2.png);
+    min-height: 560px;
+    min-width: 627px;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: background-size 1.0s ease;
+}
+.btt{
+    width: 100%;
+    padding: 20px 20px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #82AE98 0%, #82AE98 50%, #f0f0f085 50%, #f0f0f085 100%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.8s ease;
+    text-decoration: none;
+    color: black;
+}
+
+.btt:hover{
+    background-position: left;
+    color: white;
+}
+.xd1:hover{
+    background-size: 140%;
+}
+.xd2:hover{
+    background-size: 130%;
+}
+
+.backonly{
+    background-color: #FBFAFA;
+    padding-bottom: 100px;
+}
+.h2_2{
+    color: #1c1c1c;
+    font-size: 24px;
+    font-family: 'Gotham Bold', sans-serif;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 8px auto 24px;
+    text-align: center;
+    padding-top: 30px;
+}   
+.h2_2::after{
+    content: '';
+    width: 50px;
+    height: 2px;
+    background: #1c1c1c;
+    margin: 8px auto;
+    display: block;
+}
+.max302{
+    flex: 1 0 300px; 
+    max-width: 302px;
+    gap: 20px;
+}
+.max302:last-child {
+    margin-right: 0;
+}
+.max302_back{
+    padding: 20px;
+    background-color: white;
+}
+.max302_back > a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+.max302_back > p {
+    margin: 0px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.s1{
+    background-image: url(../assets/images/smart-casual-mens-homepage-final-desktop.jpg);
+    min-height: 560px;
+    min-width: 410px;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: background-size 1.0s ease;
+    margin: 30px 0px;
+}
+.s1:nth-child(2){
+    display: flex;
+    background-color: #EEECEC;
+    background-image: none;
+    max-height: 560px;
+    max-width: 410px;
+    flex-direction: column;
+    align-items: center;
+}
+.s1:nth-child(3){
+    background-image: url(../assets/images/smart-casual-womens-homepage-desktop.jpg);
+}
+.s1:hover{
+    background-size: 110%;
+}
+.btt2{
+    width: 250px;
+    padding: 20px 0px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #82AE98 0%, #82AE98 50%, #f0f0f0cc 50%, #f0f0f0cc 100%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.8s ease;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.btt2:hover{
+    background-position: left;
+    color: white;
+}
+h5{
+    color: #004125;
+    font-family: 'Gotham', serif;
+    font-weight: 400;
+    line-height: 32px;
+    font-size: 18px;
+    letter-spacing: normal;
+}
+.promo{
+    color: #000;
+    font-size: 14px;
+    line-height: 1.43;
+    margin: 8px auto 40px;
+    padding: 0 16px;
+    max-width: 244px;
+    text-align: center;
+}
+.btt3{
+    width: 100px;
+    padding: 20px 20px;
+    text-align: center;
+    border: 1px solid #661F89;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: #661F89;
+    transition: transform 0.3s ease;
+}
+.btt33 {
+    display: inline-block; 
+    transition: transform 0.3s ease; 
+}
+
+.btt33:hover {
+    transform: translateY(-5px); 
+}
+
+.immg{
+    width: 1280px;
+    height: 50px;
+    background-image: url(../assets/images/M_Retail_Placeholder-Line_Balls_1440x60px_1.png);
+    background-position: center;
+    background-size: 100%;
+}
