@@ -40,10 +40,9 @@ function prevSlide() {
     showSlide(currentSlide);
 }
 
-// Función para cambiar de slide automáticamente cada 10 segundos
 function autoSlide() {
-    setInterval(nextSlide, 10000); // 10000 milisegundos = 10 segundos
+    setInterval(nextSlide, 10000);
 }
 
 showSlide(currentSlide);
-autoSlide(); // Iniciar el cambio automático de slides
+autoSlide();
