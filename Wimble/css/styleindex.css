@@ -1,0 +1,360 @@
+@font-face {
+    font-family: Gotham;
+    src: url(../assets/fonts/Gotham-Book.otf);
+}
+body,
+html {
+    font-family: Gotham;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    /* overflow: hidden; */
+}
+.wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.columna-izquierda {
+    width: 20%; 
+    background-color: white;
+    overflow-y: scroll;
+    position: relative;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    border-left: 1px solid gray;
+}
+
+.columna-izquierda::-webkit-scrollbar {
+    display: none;
+}
+
+.columna-derecha {
+    width: 80%;
+    background-color: #fff;
+    overflow-y: scroll;
+    position: relative; /* Agrega esto */
+}
+
+.columna-derecha::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    width: 80%;
+    top: 0;
+    z-index: 40;
+    justify-content: space-between;
+    height: 15%;
+    align-items: center;
+}
+.iimg{
+    width: 80px;
+    height: 80px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Gotham 7r", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+
+}
+
+.carrusel {
+    background-image: url(../assets/images/b_559067.jpg);
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    /* padding-top: 200px; */
+}
+
+.aaaa {
+    background-color: white;
+    position: sticky;
+    z-index: 30;
+    max-height: 84%;
+    overflow-y: auto;
+}
+
+.zsd {
+    position: relative;
+    top: -108px;
+    z-index: 1;
+    width: 100%;
+}
+.aaaa::-webkit-scrollbar {
+    display: none;
+}
+.xd{
+    display: flex;
+    /* width: 300px; */
+    height: 50px;
+    background-color: green;
+    position: relative;
+    top: 150px;
+}
+.shop-header{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: .5px;
+    color: #4e2683;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.shop-header-stripe{
+    width: 30px;
+    height: 2px;
+    border-style: none;
+    background-color: #4e2683;
+    margin: 5px auto 10px auto;
+}
+.price{
+    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
+    color: #4e2683;
+    font-size: 13px;
+    text-align: center;
+
+}
+.cards {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #00703C;
+}
+.card{
+    padding: 2px 20px 20px 20px;
+    width: 100px;
+    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
+    color: #4e2683;
+    font-size: 13px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card > img{
+    width: 140px;
+    height: 140px;
+}
+.date-text {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    color: #00703c;
+    font-size: 24px;
+    padding: 0 10px;
+    letter-spacing: 1.5px;
+}
+.aass {
+    display: flex;
+    justify-content: center;
+    width: 900px;  
+    margin: 0 auto;
+    align-items: center;
+}
+.aasss {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 900px;  
+    margin: 0 auto;
+    align-items: center;
+}
+.aass > img{
+width: 700px;
+}
+.aaaaa{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+.ima{
+    background-image: url(../assets/images/b_2024poster.jpg);
+    background-size: 100%;
+    width: 530px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.asd {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.ci-card{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: end;
+}
+.type-tag {
+    color: #fff;
+    text-transform: uppercase;
+    background: #00703c;
+    height: 15px;
+    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
+    line-height: 15px;
+    font-size: 10px;
+    padding: 0 10px;
+    text-align: center;
+    right: -193px;
+    top: 10px;
+    z-index: 5;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    width: 40px;
+}
+
+
+
+
+
+
+
+
+.login-form,
+.message-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+.login-form h2,
+.message-form h2 {
+    text-align: center;
+}
+
+.login-form .input-group,
+.message-form .input-group {
+    margin-bottom: 15px;
+}
+
+.login-form .input-group label,
+.message-form .input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form .input-group input,
+.message-form .input-group input,
+.login-form .input-group textarea,
+.message-form .input-group textarea,
+.login-form .input-group select,
+.message-form .input-group select {
+    width: 100%;
+    padding: 8px 0px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-form .input-group input[type="color"],
+.message-form .input-group input[type="color"] {
+    padding: 0;
+}
+
+.login-form .input-group label,
+.message-form .input-group label {
+    display: block;
+}
+
+.login-form .input-group input[type="checkbox"],
+.message-form .input-group input[type="checkbox"],
+.login-form .input-group input[type="radio"],
+.message-form .input-group input[type="radio"] {
+    display: inline;
+    margin-right: 5px;
+}
+
+.login-form button,
+.message-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00703c;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-form button:hover,
+.message-form button:hover {
+    background-color: #00703c;
+}
+
+.calendar {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #00703c;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+thead th:first-child,
+tbody td:first-child {
+    border-left: 2px solid #00703c;
+}
+
+thead th:last-child,
+tbody td:last-child {
+    border-right: 2px solid #00703c;
+}
+
+tbody td {
+    border-bottom: 1px solid #ccc;
+}
+
+tbody td:last-child {
+    border-bottom: none;
+}
+
+tbody td:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tbody td:hover {
+    background-color: #e0e0e0;
+}
