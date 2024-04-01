@@ -345,7 +345,9 @@ li{
 .s1{
     background-image: url(../assets/images/smart-casual-mens-homepage-final-desktop.jpg);
     min-height: 560px;
-    min-width: 410px;
+    /* min-width: 410px; */
+    /* max-height: 660px; */
+    /* max-width: 510px; */
     background-size: 100%;
     background-position: center;
     display: flex;
@@ -353,6 +355,9 @@ li{
     justify-content: center;
     transition: background-size 1.0s ease;
     margin: 30px 0px;
+    flex-shrink: 1;
+    flex-grow: 5;
+    flex-basis: 50px;
 }
 .s1:nth-child(2){
     display: flex;
@@ -586,6 +591,7 @@ ul{
     align-items: center;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 .carr:nth-child(1){
     background-image: url(../assets/images/low_resolution\ \(1\).jpg);

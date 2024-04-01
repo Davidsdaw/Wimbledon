@@ -2,26 +2,28 @@
     font-family: Gotham;
     src: url(../assets/fonts/Gotham-Book.otf);
 }
+
 body,
 html {
     font-family: Gotham;
     margin: 0 auto;
     padding: 0;
     height: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .wrapper {
     display: flex;
     height: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
-.wrapper::-webkit-scrollbar{
+
+.wrapper::-webkit-scrollbar {
     display: none;
 }
 
 .columna-izquierda {
-    width: 20%; 
+    width: 20%;
     background-color: white;
     overflow-y: scroll;
     position: relative;
@@ -31,14 +33,14 @@ html {
 }
 
 .columna-izquierda::-webkit-scrollbar {
-    display: none;
+    display: none;  
 }
 
 .columna-derecha {
     width: 80%;
     background-color: #fff;
     overflow-y: scroll;
-    position: relative; /* Agrega esto */
+    position: relative;
 }
 
 .columna-derecha::-webkit-scrollbar {
@@ -55,10 +57,12 @@ html {
     height: 15%;
     align-items: center;
 }
-.iimg{
+
+.iimg {
     width: 80px;
     height: 80px;
 }
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -80,7 +84,6 @@ html {
     width: 100%;
     height: 100%;
     z-index: 0;
-    /* padding-top: 200px; */
 }
 
 .aaaa {
@@ -97,18 +100,20 @@ html {
     z-index: 1;
     width: 100%;
 }
+
 .aaaa::-webkit-scrollbar {
     display: none;
 }
-.xd{
+
+.xd {
     display: flex;
-    /* width: 300px; */
     height: 50px;
     background-color: green;
     position: relative;
     top: 150px;
 }
-.shop-header{
+
+.shop-header {
     text-align: center;
     text-transform: uppercase;
     font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
@@ -119,20 +124,23 @@ html {
     display: flex;
     justify-content: center;
 }
-.shop-header-stripe{
+
+.shop-header-stripe {
     width: 30px;
     height: 2px;
     border-style: none;
     background-color: #4e2683;
     margin: 5px auto 10px auto;
 }
-.price{
+
+.price {
     font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
     color: #4e2683;
     font-size: 13px;
     text-align: center;
 
 }
+
 .cards {
     margin: 0 auto;
     width: 1000px;
@@ -142,7 +150,8 @@ html {
     align-items: center;
     border-bottom: 2px solid #00703C;
 }
-.card{
+
+.card {
     padding: 2px 20px 20px 20px;
     width: 100px;
     font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
@@ -153,10 +162,12 @@ html {
     flex-direction: column;
     align-items: center;
 }
-.card > img{
+
+.card>img {
     width: 140px;
     height: 140px;
 }
+
 .date-text {
     display: flex;
     justify-content: center;
@@ -166,32 +177,37 @@ html {
     padding: 0 10px;
     letter-spacing: 1.5px;
 }
+
 .aass {
     display: flex;
     justify-content: center;
-    width: 900px;  
+    width: 900px;
     margin: 0 auto;
     align-items: center;
 }
+
 .aasss {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    width: 900px;  
+    width: 900px;
     margin: 0 auto;
     align-items: center;
 }
-.aass > img{
-width: 700px;
+
+.aass>img {
+    width: 700px;
 }
-.aaaaa{
+
+.aaaaa {
     display: flex;
     justify-content: center;
     position: sticky;
     top: 0px;
     background-color: white;
 }
-.ima{
+
+.ima {
     background-image: url(../assets/images/b_2024poster.jpg);
     background-size: 100%;
     width: 530px;
@@ -199,6 +215,7 @@ width: 700px;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .asd {
     width: 1300px;
     margin: 0 auto;
@@ -207,13 +224,15 @@ width: 700px;
     align-items: center;
     padding: 20px;
 }
-.ci-card{
+
+.ci-card {
     margin: 40px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     justify-content: end;
 }
+
 .type-tag {
     color: #fff;
     text-transform: uppercase;
@@ -357,4 +376,37 @@ tbody td:nth-child(odd) {
 
 tbody td:hover {
     background-color: #e0e0e0;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+li {
+    display: inline-block;
+    font-family: "gotham_bookregular", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: .5px;
+    font-weight: normal;
+    margin: 0;
+    list-style: none none;
+}
+small{
+    font-size: 10px;
+}
+.socials{
+    font-size: 22px;
+}
+.social{
+    
 }
