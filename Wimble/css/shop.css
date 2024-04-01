@@ -540,7 +540,7 @@ h1{
 }
 ul{
     margin: 0;
-    padding: 0;
+    padding-left: 40px;
     list-style: none none;
 }
 .li{

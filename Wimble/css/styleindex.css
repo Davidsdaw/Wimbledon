@@ -59,10 +59,14 @@ html {
 }
 
 .iimg {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
+    padding-left: 130px;
 }
+.test{
+    display: flex;
 
+}
 .menu {
     display: flex;
     flex-direction: column;
@@ -72,11 +76,35 @@ html {
     font-family: "Gotham 7r", Helvetica, Arial, sans-serif;
     font-size: 13px;
     text-transform: uppercase;
+    font-weight: bold;
 
 }
+.menu_ico{
+    font-size: 30px;
+}
+.login{
+    display: flex;
+    gap: 8px;
+    align-items: center;
 
+}
+.login_txt{
+    font-size: 17px;
+    letter-spacing: .7px;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+}
+.login_txt:hover{
+    border-bottom: 1px solid white;
+}
+.login_bar{
+    font-size: 25px;
+    color: white;
+}
 .carrusel {
     background-image: url(../assets/images/b_559067.jpg);
+    background-color: #00703C;
     background-size: cover;
     position: sticky;
     top: 0;
@@ -84,6 +112,7 @@ html {
     width: 100%;
     height: 100%;
     z-index: 0;
+    transition: background-image 1s ease-in-out;
 }
 
 .aaaa {
@@ -107,10 +136,64 @@ html {
 
 .xd {
     display: flex;
-    height: 50px;
-    background-color: green;
     position: relative;
-    top: 150px;
+    top: 153px;
+    justify-content:space-between;
+    padding:10px 40px;
+}
+.dertext{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+}
+.dertext_p{
+    margin: 0px 0px;
+    padding-right: 10px;
+}
+.box2 {
+    display: flex;
+    flex-direction: row;
+    width: 240px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    padding: 5px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.233);
+}
+.boximg{
+    width: 112px;
+    height: 72px;
+}
+.pxx{
+    padding: 0px 5px;
+    font-size: 12px;
+    color: white;
+}
+.pxxx{
+    padding: 0px 5px;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+}
+.pxx2{
+    font-weight: normal;
+    font-size: 9px;
+}
+.pxx:hover{
+    border-bottom: 1px solid white;
+}
+.hidden{
+    visibility: hidden;
+}
+.box3 {
+    display: flex;
+    background-color: #00703cc2;
+    border-radius: 10px;
+    width: 230px;
+    gap: 5px;
+    align-items: center;
+    padding: 5px;
 }
 
 .shop-header {
@@ -123,6 +206,7 @@ html {
     font-weight: bold;
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 }
 
 .shop-header-stripe {
@@ -134,33 +218,54 @@ html {
 }
 
 .price {
-    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
     color: #4e2683;
     font-size: 13px;
     text-align: center;
-
+    font-weight: bold;
+}
+.arrow{
+    font-size: 40px;
+    color: rgb(122, 122, 122);
+    cursor: pointer;
+}
+.arrow:hover{
+    color: rgb(165, 164, 164);
 }
 
 .cards {
     margin: 0 auto;
-    width: 1000px;
+    width: 1130px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid #00703C;
+    margin-bottom: 20px;
+    gap: 30px;
 }
 
 .card {
-    padding: 2px 20px 20px 20px;
-    width: 100px;
-    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 175px;
     color: #4e2683;
     font-size: 13px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: box-shadow 0.5s ease;
+    margin-bottom: 10px;
+}
+.card:hover{
+    box-shadow: 0px 0px 3px 1px #00703C;
+
+}
+.card_title{
+    color: #4e2683;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .card>img {
@@ -181,24 +286,63 @@ html {
 .aass {
     display: flex;
     justify-content: center;
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
     align-items: center;
+    padding: 20px 0px;
+    cursor: pointer;
 }
 
 .aasss {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
     align-items: center;
+    padding: 20px 0px;
+    cursor: pointer;
 }
 
-.aass>img {
-    width: 700px;
+.aass_text{
+    width: 400px;
+    padding-right: 50px;
 }
-
+.aass_text--2{
+    width: 400px;
+    padding-left: 50px;
+}
+.day{
+    font-size: 12px;
+    letter-spacing: .5px;
+    color: #00703C;
+    font-weight: bold;
+}
+.hour{
+    font-size: 11px;
+    letter-spacing: .5px;
+    font-weight: normal;
+    color: #00703C;
+}
+.titl3{
+    font-size: 30px;
+    letter-spacing: .5px;
+    font-weight: bolder;
+    color: #54008B;
+    margin: 5px 0px 20px 0px;
+}
+.desc{
+    font-size: 12px;
+    letter-spacing: .5px;
+    font-weight: lighter;
+    color: grey;
+}
+.ico{
+    color: #00703C;
+    font-size: 35px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
 .aaaaa {
     display: flex;
     justify-content: center;
@@ -206,7 +350,43 @@ html {
     top: 0px;
     background-color: white;
 }
+.aaaaa_so{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 20px 20px;
+    border-bottom: 1px solid white;
 
+}
+.aaaaa_text{
+    color: #00703C;
+    width: 100px;
+}
+.aaaaa_ico{
+    font-size: 30px;
+    font-weight: lighter;
+}
+.asddd{
+    margin: 0px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+.aaaaa_so:hover{
+    border-bottom: 1px solid #00703C;
+}
+.title_date{
+    font-size: 24px;
+    letter-spacing: .5px;
+    font-weight: bold;
+    color: #00703C;
+}
+hr{
+    width: 10%;
+    height: 2px;
+    background-color: #00703C;
+    border-radius: 10px;
+}
 .ima {
     background-image: url(../assets/images/b_2024poster.jpg);
     background-size: 100%;
@@ -214,6 +394,37 @@ html {
     height: 350px;
     background-repeat: no-repeat;
     background-position: center;
+    transition: background-size 0.8s ease;
+}
+.ima:hover{
+    background-size: 120%;
+}
+
+.ima2{
+    background-image: url(../assets/images/b_2024hill.jpg);
+    background-size: 100%;
+    width: 530px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-size 0.8s ease;
+
+}
+.ima2:hover{
+    background-size: 120%;
+}
+.ima3{
+    background-image: url(../assets/images/b_20230717_gentschamp_TL303875-324672_3712.jpg);
+    background-size: 100%;
+    width: 530px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-size 0.8s ease;
+
+}
+.ima3:hover{
+    background-size: 120%;
 }
 
 .asd {
@@ -222,15 +433,16 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0px 20px;
 }
 
 .ci-card {
-    margin: 40px;
+    margin: 30px 40px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     justify-content: end;
+    cursor: pointer;
 }
 
 .type-tag {
@@ -238,7 +450,6 @@ html {
     text-transform: uppercase;
     background: #00703c;
     height: 15px;
-    font-family: "Gotham 5r", Helvetica, Arial, sans-serif;
     line-height: 15px;
     font-size: 10px;
     padding: 0 10px;
@@ -251,7 +462,6 @@ html {
     justify-content: center;
     width: 40px;
 }
-
 
 
 
@@ -382,8 +592,9 @@ tbody td:hover {
 .footer {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 15px 30px;
     align-items: center;
+    border-top: 1px solid black;
 }
 a{
     text-decoration: none;
@@ -400,13 +611,43 @@ li {
     font-weight: normal;
     margin: 0;
     list-style: none none;
+    padding-right: 5px;
+}
+li:nth-last-child(){
+    padding: 0px;
 }
 small{
     font-size: 10px;
 }
 .socials{
-    font-size: 22px;
+    font-size: 23px;
 }
-.social{
-    
+.socials_social{
+    color: black;
+    padding-right: 20px;
+}
+.socials_social:nth-last-child(){
+    padding: 0px;
+}
+.padtop{
+    padding-top: 5px;
+}
+.pder{
+    font-size: 20px;
+    letter-spacing: .5px;
+    font-weight: bolder;
+    color: #54008B;
+    margin: 5px 0px 0px 0px;
+}
+.hrr{
+    background-color: #54008b;
+    margin: 10px 0 15px;
+    transition: width 0.5s ease;
+    height: 2px;
+}
+.titl3:hover + .hrr{
+    width: 25%;
+}
+.pder:hover + .hrr{
+    width: 25%;
 }
